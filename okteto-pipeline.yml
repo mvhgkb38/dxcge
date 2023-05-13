@@ -1,3 +1,3 @@
 deploy:
-  - okteto build -t okteto.dev/recok:latest
+  - okteto build -t okteto.dev/wecod:latest
   - kubectl apply -f k8s
