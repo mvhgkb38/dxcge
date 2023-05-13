@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: wecod
+  name: giod
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: wecod
+      app: giod
   template:
     metadata:
       labels:
-        app: wecod
+        app: giod
     spec:
       containers:
-      - image: okteto.dev/wecod:latest
-        name: wecod
+      - image: okteto.dev/giod:latest
+        name: giod
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: Site
           value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
         - name: Vless_UUID
-          value: "a947a326-cca4-421e-b3b6-d880a2d9d5ab"
+          value: "4883d285-caa4-4400-ae10-5b2d0d4f7844"
         - name: Vless_Path
-          value: "/gbvcdtcvexwn"
+          value: "/knbvttcvexwn"
         - name: Vmess_UUID
-          value: "a947a326-cca4-421e-b3b6-d880a2d9d5ab"
+          value: "4883d285-caa4-4400-ae10-5b2d0d4f7844"
         - name: Vmess_Path
-          value: "/kmnvtdxeskhotx"
+          value: "/ygctfdxeskhotx"
         - name: Share_Path
           value: "/v2link"
