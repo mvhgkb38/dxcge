@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: geet
+  name: kervok
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: geet
+      app: kervok
   template:
     metadata:
       labels:
-        app: geet
+        app: kervok
     spec:
       containers:
-      - image: okteto.dev/geet:latest
-        name: geet
+      - image: okteto.dev/kervok:latest
+        name: kervok
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: Site
           value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
         - name: Vless_UUID
-          value: "d2b15469-086a-4445-bb3e-bcfc3f2c6cde"
+          value: "1ed6dd68-cdc0-47eb-b83c-d0c105186f2f"
         - name: Vless_Path
-          value: "/kmtcvrvknygrdx"
+          value: "/kmthvfdxserdx"
         - name: Vmess_UUID
-          value: "d2b15469-086a-4445-bb3e-bcfc3f2c6cde"
+          value: "1ed6dd68-cdc0-47eb-b83c-d0c105186f2f"
         - name: Vmess_Path
-          value: "/fdygvcrxezkhotx"
+          value: "/txcswzbgezkhotx"
         - name: Share_Path
           value: "/v2link"
