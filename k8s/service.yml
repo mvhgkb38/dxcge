@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: recok
+  name: wecod
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "recok"
+  - name: "wecod"
     port: 8080
   selector:
-    app: recok
+    app: wecod
