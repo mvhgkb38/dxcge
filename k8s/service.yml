@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: wecod
+  name: giod
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "wecod"
+  - name: "giod"
     port: 8080
   selector:
-    app: wecod
+    app: giod
