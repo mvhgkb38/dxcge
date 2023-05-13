@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: recok
+  name: wecod
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: recok
+      app: wecod
   template:
     metadata:
       labels:
-        app: recok
+        app: wecod
     spec:
       containers:
-      - image: okteto.dev/recok:latest
-        name: recok
+      - image: okteto.dev/wecod:latest
+        name: wecod
         ports:
         - containerPort: 8080
         env:
@@ -25,10 +25,10 @@ spec:
         - name: Vless_UUID
           value: "a947a326-cca4-421e-b3b6-d880a2d9d5ab"
         - name: Vless_Path
-          value: "/gbvcdrdxserdx"
+          value: "/gbvcdtcvexwn"
         - name: Vmess_UUID
           value: "a947a326-cca4-421e-b3b6-d880a2d9d5ab"
         - name: Vmess_Path
-          value: "/tnbvtfcdkzkhotx"
+          value: "/kmnvtdxeskhotx"
         - name: Share_Path
           value: "/v2link"
