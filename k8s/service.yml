@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: geet
+  name: kervok
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "geet"
+  - name: "kervok"
     port: 8080
   selector:
-    app: geet
+    app: kervok
